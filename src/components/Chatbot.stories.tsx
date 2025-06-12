@@ -6,7 +6,8 @@ const meta: Meta<typeof Chatbot> = {
   component: Chatbot,
   tags: ["autodocs"],
   args: {
-    title: "AI Chatbot"
+    title: "AI Chatbot",
+    apiKey: process.env.openAiApi
   }
 };
 
