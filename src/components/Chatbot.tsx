@@ -57,7 +57,7 @@ export const Chatbot: React.FC<ChatbotProps> = ({ title = 'AI Chatbot', apiKey }
   };
 
   return (
-    <div style={{ border: '1px solid #ddd', borderRadius: 8, width: 350, height: 500, display: 'flex', flexDirection: 'column', background: '#fff' }}>
+    <div style={{ border: '1px solid #ddd', borderRadius: 8, width: 350, height: 500, display: 'flex', flexDirection: 'column', background: '#fff', boxShadow: '0 4px 8px rgba(0,0,0,0.1)' }}>
       <div style={{ padding: 12, borderBottom: '1px solid #eee', background: '#f8f8f8', fontWeight: 600 }}>
         {title}
       </div>
@@ -67,7 +67,7 @@ export const Chatbot: React.FC<ChatbotProps> = ({ title = 'AI Chatbot', apiKey }
         ) : (
           messages.map((msg) => (
             <div key={msg.id} style={{ marginBottom: 8, textAlign: msg.sender === 'user' ? 'right' : 'left' }}>
-              <span style={{ background: msg.sender === 'user' ? '#007bff' : '#e9ecef', color: msg.sender === 'user' ? 'white' : 'black', padding: '8px 12px', borderRadius: 12, display: 'inline-block' }}>
+              <span style={{ background: msg.sender === 'user' ? '#000' : '#e9ecef', color: msg.sender === 'user' ? 'white' : 'black', padding: '8px 12px', borderRadius: 12, display: 'inline-block' }}>
                 {msg.text}
               </span>
             </div>
@@ -84,7 +84,7 @@ export const Chatbot: React.FC<ChatbotProps> = ({ title = 'AI Chatbot', apiKey }
           onKeyPress={(e) => e.key === 'Enter' && handleSendMessage()}
         />
         <button
-          style={{ padding: '8px 16px', background: '#007bff', color: 'white', border: 'none', borderRadius: 4, cursor: 'pointer' }}
+          style={{ padding: '8px 16px', background: '#000', color: 'white', border: 'none', borderRadius: 4, cursor: 'pointer' }}
           onClick={handleSendMessage}
         >
           Send
