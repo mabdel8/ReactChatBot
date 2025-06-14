@@ -7,7 +7,7 @@ const meta: Meta<typeof Chatbot> = {
   tags: ["autodocs"],
   args: {
     title: "AI Chatbot",
-    apiKey: process.env.openAiApi
+    apiKey: "your-api-key-here" // Replace with your actual API key for testing
   }
 };
 
