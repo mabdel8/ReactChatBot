@@ -57,7 +57,7 @@ export const Chatbot: React.FC<ChatbotProps> = ({ title = 'AI Chatbot', apiKey }
   };
 
   return (
-    <div style={{ border: '1px solid #ddd', borderRadius: 8, width: 350, height: 500, display: 'flex', flexDirection: 'column', background: '#fff' }}>
+    <div style={{ border: '1px solid #ddd', borderRadius: 8, width: 350, height: 500, display: 'flex', flexDirection: 'column', background: '#fff', boxShadow: '0 4px 8px rgba(0,0,0,0.1)' }}>
       <div style={{ padding: 12, borderBottom: '1px solid #eee', background: '#f8f8f8', fontWeight: 600 }}>
         {title}
       </div>
